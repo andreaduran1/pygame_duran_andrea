@@ -50,7 +50,7 @@ force_field_sound.set_volume(0.2)
 explosion_sound = pygame.mixer.Sound(assets["sounds"]["explosion_sound"])
 explosion_sound.set_volume(0.2)
 impact_sound =pygame.mixer.Sound(assets["sounds"]["impact_sound"])
-impact_sound.set_volume(0.2)
+impact_sound.set_volume(0.5)
 
 # Musica
 pygame.mixer.music.load(assets["music"]["musica_fondo"])
