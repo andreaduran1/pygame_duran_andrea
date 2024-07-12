@@ -2,7 +2,7 @@ import pygame
 from game import game_loop
 from ranking import show_ranking
 from settings import *
-from modulos import terminar
+from modulos import *
 import json
 
 #cargo json con assets:
@@ -78,8 +78,7 @@ def main_menu():
         play_button = font_text.render("Play", True, WHITE)
         ranking_button = font_text.render("Ranking", True, WHITE)
         
-
-        screen.blit(title, (MID_WIDTH_SCREEN - title.get_width() // 2, 100))
+        mostrar_texto(screen,(MID_WIDTH_SCREEN, 100),"Space Defender",font_title)
         screen.blit(play_button, (MID_WIDTH_SCREEN - play_button.get_width() // 2, 250))
         screen.blit(
             ranking_button, (MID_WIDTH_SCREEN - ranking_button.get_width() // 2, 350)
@@ -110,7 +109,7 @@ def main_menu():
                         high_score
                     )
                 elif 350 < event.pos[1] < 350 + ranking_button.get_height():
-                    show_ranking(screen)
+                    show_ranking(screen,font_game)
                     
 
 

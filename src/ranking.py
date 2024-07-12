@@ -1,7 +1,7 @@
 import pygame
 from modulos import *
 
-def show_ranking(screen):
+def show_ranking(screen,font):
     clock = pygame.time.Clock()
     running = True
 
@@ -38,11 +38,9 @@ def show_ranking(screen):
 
         screen.fill(BLACK)
 
-        font = pygame.font.Font(None, 36)
         y_offset = 100
         for score in scores:
-            score_text = font.render(f'{score["nombre"]}: {score["puntaje"]}', True, WHITE)
-            screen.blit(score_text, (100, y_offset))
+            mostrar_texto(screen, (MID_WIDTH_SCREEN, y_offset), f'{score["nombre"]}: {score["puntaje"]}', font)
             y_offset += 40
 
         pygame.display.flip()
