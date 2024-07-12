@@ -1,0 +1,27 @@
+{
+  "sounds": {
+    "laser_sound": "./src/assets/sounds/laser.ogg",
+    "game_over_sound": "./src/assets/sounds/game_over.mp3",
+    "force_field_sound": "./src/assets/sounds/forceField.ogg",
+    "explosion_sound": "./src/assets/sounds/explosion.ogg",
+    "impact_sound":"./src/assets/sounds/impact.ogg"
+  },
+  "music":{
+    "musica_fondo": "./src/assets/music/musica_fondo.mp3"
+  },
+  "images": {
+    "background_menu": "./src/assets/images/bg-main.png",
+    "background_game": "./src/assets/images/bg-principal.jpg",
+    "cursor": "./src/assets/images/target.png",
+    "nave": "./src/assets/images/playerShip1_blue.png",
+    "nave_enemiga": "./src/assets/images/enemyRed1.png",
+    "powerup_shield": "./src/assets/images/shield_gold.png",
+    "explosion": "./src/assets/images/explosion00.png",
+    "icon": "./src/assets/images/shield_gold.png"
+  },
+  "fonts": {
+    "font_title": "./src/assets/fonts/nasalization-rg.otf",
+    "font_text": "./src/assets/fonts/computo-monospace.otf",
+    "font_game": "./src/assets/fonts/computo-monospace.otf"
+  }
+}
