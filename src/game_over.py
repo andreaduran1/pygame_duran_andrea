@@ -1,5 +1,5 @@
 import pygame
-import sys
+from modulos import *
 from settings import *
 
 def game_over_screen(screen, score, font_title, font,high_score):
@@ -21,8 +21,7 @@ def game_over_screen(screen, score, font_title, font,high_score):
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
+                terminar()
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_RETURN:
                 running = False
                 from main import main_menu
